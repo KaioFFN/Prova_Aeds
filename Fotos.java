@@ -1,4 +1,5 @@
 public class Fotos {
+    
     private String url;
     private String descricao;
 
@@ -14,4 +15,8 @@ public class Fotos {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+    public Fotos(String url , String descricao){
+    setUrl(url);
+    setDescricao(descricao);
+    };
 }
