@@ -33,7 +33,8 @@ public class InstaPet {
                         
                 }
         }
-        System.out.println(j);
+        System.out.println("\t\tO usuario "+ email +" possui "+ j + " fotos");
+        System.out.println();
     }
     public int qnt_usuarios()
     {
@@ -46,8 +47,10 @@ public class InstaPet {
             
                 if (email.equals(user[i].getEmail())) {
                     while (user[i].registro[j] != null) {
-                    System.out.println(user[i].registro[j].getUrl());  
-                    System.out.println(user[i].registro[j].getDescricao());
+                    System.out.println();
+                    System.out.println("\t\tURL: " + user[i].registro[j].getUrl());  
+                    System.out.println("\t\tDescrição: " + user[i].registro[j].getDescricao());
+                    System.out.println();
                     j++;
                    } 
                         
@@ -61,6 +64,7 @@ public class InstaPet {
             System.out.println( user[i].getNome());
             System.out.print("\t\t" + "EMAIL: ");
             System.out.println(user[i].getEmail());
+            System.out.println();
         }
         return null;
     }

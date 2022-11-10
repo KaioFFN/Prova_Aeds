@@ -34,11 +34,11 @@ public class Program {
             case 2:
                 System.out.println();
                 input.nextLine();
-                System.out.println("\t\tDigite o email do usuario");
+                System.out.print("\t\tDigite o email do usuario ");
                 email = input.next();
-                System.out.println("\t\tDigite a url");
+                System.out.print("\t\tDigite a url ");
                 url = input.next();
-                System.out.println("\t\tDigite a descrição da foto");
+                System.out.print("\t\tDigite a descrição da foto ");
                 input.nextLine();
                 desc = input.nextLine();
                 insta.cadastra_foto(email, url, desc);
@@ -48,7 +48,7 @@ public class Program {
                 insta.listar_usuarios();
                 break;
             case 4:
-                System.out.println("\t\tDigite o email desejado");
+                System.out.print("\t\tDigite o email desejado ");
                 email = input.next();
                 insta.listarFotos(email);
                 break;
@@ -57,18 +57,18 @@ public class Program {
                 System.out.println();
               break;
             case 6:
-                System.out.println("\t\tDigite o Email");
+                System.out.print("\t\tDigite o Email ");
                 email = input.next();
                 insta.qnt_pets(email);
                 break;
             case 7:
                 int numFotoMudarDescricao;
-                System.out.println("\t\tDigite o email do usuario");
+                System.out.print("\t\tDigite o email do usuario ");
                 email = input.next();
-                System.out.println("\t\tDigite a descrição");
+                System.out.print("\t\tDigite a descrição ");
                 input.nextLine();
                 desc = input.nextLine();
-                System.out.println("\t\tNumero da foto");
+                System.out.print("\t\tNumero da foto ");
                 numFotoMudarDescricao = input.nextInt();
                 insta.altera_descricao(email, numFotoMudarDescricao, desc);
                 break;
